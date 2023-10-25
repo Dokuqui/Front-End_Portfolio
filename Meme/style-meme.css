@@ -1,0 +1,21 @@
+body {
+    background-color: burlywood;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+  }
+  
+  .poster {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 75px;
+    color: crimson;
+    font-family: "Lato", serif;
+    text-align: center;
+  }
+  
+  .motivation-img {
+    border: 10px solid white;
+    width: 90%;
+  }
