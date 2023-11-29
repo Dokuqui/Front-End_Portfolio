@@ -1,0 +1,35 @@
+#container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#container img {
+    width: 100%;
+    height: auto;
+    display: none;
+    transition: opacity 1s ease;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+#container img.active {
+    display: block;
+}
