@@ -1,0 +1,134 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-menu {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.burger-menu input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 10px;
+    margin-right: 5px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.search-container button {
+    padding: 10px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.menu li {
+    margin: 10px 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+@media screen and (max-width: 1920px) {
+
+    .burger-menu {
+        display: flex;
+        font-size: 18px;
+    }
+
+    .bar {
+        height: 4px;
+        margin: 4px 0;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .burger-menu.open {
+        transform: rotate(45deg); 
+    }
+
+    .burger-menu.open .bar:nth-child(1) {
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    .burger-menu.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.open .bar:nth-child(3) {
+        transform: translateY(0) rotate(45deg);
+    }
+}
