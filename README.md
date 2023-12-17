@@ -15,3 +15,4 @@ All different small Project in Front:
 5. Price List in CSS for understanding with flexbox
 6. QR Project with usage of server and NodeJS
 7. Burger Menu with search input
+8. Simon Game Code
