@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 2px;
+  text-align: center;
+}
+
+h1 {
+  animation: spin 1s linear;
+}
+
+h1:hover {
+  transform: scale(1.1);
+}
+
+#loading {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  opacity: 1;
+  animation: fadeOut 2s forwards;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.084);
+  border-top: 4px solid rgb(0, 145, 255);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  animation: spin 1s linear infinite, fadeOut 2s forwards;
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#content.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.news-article {
+  margin: 20px;
+  padding: 20px;
+  height: 25rem;
+  width: 40rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 5s forwards;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.image {
+  max-width: 250px;
+  width: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.3);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  25% {
+    opacity: 0.25;
+    transform: translateY(37.5px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(25px);
+  }
+  70% {
+    opacity: 0.75;
+    transform: translateY(12.5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
