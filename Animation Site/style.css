@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #5b9ee6;
   color: white;
   padding: 2px;
   text-align: center;
@@ -40,27 +40,31 @@ h1:hover {
   opacity: 1;
 }
 
+section {
+  margin-bottom: 20px;
+}
+
 #content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 20px;
   opacity: 0;
-  transform: translateY(50px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 #content.fade-in {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .news-article {
   margin: 20px;
   padding: 20px;
-  height: 25rem;
-  width: 40rem;
+  height: 30rem;
+  width: 25rem;
   border: 1px solid #ddd;
+  box-sizing: border-box;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -84,6 +88,125 @@ h1:hover {
 
 .image:hover {
   transform: scale(1.3);
+}
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.pricing-plan {
+  flex: 1;
+  width: calc(33.33% - 2rem);
+  max-width: 400px;
+  padding: 20px;
+  background-color: #e8c3a7;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.plan-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-features li {
+  margin-bottom: 20px;
+}
+
+.plan-button {
+  padding: 15px;
+  background-color: #95e694;
+  color: #000000;
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.plan-button:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #665243;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1:hover {
+    transform: scale(1.05);
+  }
+
+  .news-article {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .image:hover {
+    transform: scale(1.1);
+  }
+
+  .pricing-container {
+    flex-direction: column;
+  }
+
+  .pricing-plan {
+    width: calc(50% - 2rem);
+  }
+
+  .plan-button:hover {
+    transform: scale(1.05);
+  }
+
+  .image:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 576px) {
+  h1:hover {
+    transform: scale(1);
+  }
+
+  .news-article {
+    width: calc(80% - 2rem);
+    font-size: 14px;
+  }
+
+  .plan-button:hover {
+    transform: scale(1);
+  }
+
+  .pricing-plan {
+    width: calc(80% - 2rem);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
 }
 
 @keyframes fadeIn {
@@ -117,14 +240,5 @@ h1:hover {
     visibility: hidden;
     height: 0;
     opacity: 0;
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: translateY(0) rotate(0deg);
-  }
-  100% {
-    transform: translateY(0) rotate(360deg);
   }
 }

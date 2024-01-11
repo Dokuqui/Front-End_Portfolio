@@ -1,20 +1,57 @@
-.violet-text {
-    color:blueviolet
+body {
+  font-family: "Times", sans-serif;
 }
 
-.box {
-    background-color: coral;
-    padding: 10px;
-  }
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+  gap: 3rem;
+}
 
-  .poster {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 7px;
-    text-align: center;
-  }
+.pricing-plan {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f215;
+  border-radius: 5px;
+  text-align: center;
+}
 
-  .devops-tools {
-    border: 10px solid white;
-    width: 50%;
+.plan-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-features li {
+  margin-bottom: 20px;
+}
+
+.plan-button {
+  padding: 15px;
+  background-color: #f21;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+
+@media (max-width: 1250px) {
+  .pricing-container {
+    flex-direction: column;
+    height: 100%;
   }
+}
