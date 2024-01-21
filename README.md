@@ -16,4 +16,4 @@ All different small Project in Front:
 6. QR Project with usage of server and `NodeJS`
 7. Burger Menu with search input
 8. Simon Game Code
-9. Animation Site: Animations using only `HTML` and `CSS`
+9. Animation Site: Animations using only `HTML` and `CSS`, also using `Flex` in `CSS`
