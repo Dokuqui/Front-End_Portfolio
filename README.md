@@ -1,6 +1,5 @@
 # Front-End-Portf
-
-Day by day addind new versions
+# Owner Illia Semenov (@Dokuqui)
 
 All different small Project in Front:
 1. Carrousel 5 different versions:
@@ -17,3 +16,5 @@ All different small Project in Front:
 7. Burger Menu with search input
 8. Simon Game Code
 9. Animation Site: Animations using only `HTML` and `CSS`, also using `Flex` in `CSS`
+10. Chart JS: Three different charts created with use of `Canvas` and `JS`
+11. 3D Curve: Small 3D project created with usage of `Three.JS`

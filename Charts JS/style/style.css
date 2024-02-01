@@ -1,0 +1,28 @@
+#canvas {
+  height: 400px;
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+#canvas2 {
+  height: 600px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#canvas3 {
+  height: 400px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
