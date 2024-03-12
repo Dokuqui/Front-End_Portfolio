@@ -12,7 +12,8 @@ All different small Project in Front:
 
 Created by: `Illia Semenov`
 
-Last Updated: [07/02/2024]
+Last Updated:
+    `12/03/2024`
 
 ## Projects
 
@@ -62,5 +63,9 @@ Last Updated: [07/02/2024]
 - - -
 
 11. 3D Curve: Small 3D project created with usage of `Three.JS`
+
+- - -
+
+12. Smoothie Site: Model of web-site 'Smoothie' created during studying "Responsive design" with `HTML` and `CSS`
 
 © 2024 `Illia Semenov`. All rights reserved.

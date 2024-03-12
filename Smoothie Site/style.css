@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url(./css/base.css);
+@import url(./css/normalize.css);
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/**********
+* GENERAL
+**********/
+
+:root {
+  --rose: #feb4c3;
+  --orange: #f59e28;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/**********
+* CLASSES GLOBALES
+**********/
+.container {
+    max-width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/**********
+* HEADER
+**********/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./img/detoxcuresmoothie.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 15px;
+  height: 600px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  letter-spacing: 5px;
+  margin: 120px 0 130px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    height: 60px;
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+/* Media Query for Desktop */
+@media (min-width: 768px) {
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    word-wrap: break-word;
+    text-align: center;
+  }
+}
+
+/**********
+* DEVISE
+**********/
+
+#devise {
+    text-align: center;
+    margin: 50px auto;
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        text-align: left;
+    }
+    img {
+        width: 50%;
+        @media (min-width: 768px) {
+            width: 250px;
+        }
+    }
+}
+
+/**********
+* FABRICATION
+**********/
+
+#fabrication {
+  background: linear-gradient(var(--rose), var(--orange));
+  padding: 30px 0;
+  text-align: center;
+  color: white;
+  article {
+    margin-top: 80px;
+  }
+}
+
+/**********
+* CONCEPT
+**********/
+
+.concept {
+  text-align: center;
+  padding: 15px 15px;
+}
+
+.concept-title h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.concept-set {
+  margin-bottom: 20px;
+  padding: 20px 20px;
+}
+
+.concept-set img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.concept-set h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.concept-set p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Media Query for Tablet and Desktop */
+@media (min-width: 768px) {
+  .concept-items {
+    display: flex;
+    margin-top: 50px;
+  }
+}
+
+/**********
+* FOOTER
+**********/
+
+footer {
+  text-align: center;
+  background-color: var(--orange);
+  padding: 20px;
+  p {
+    font-size: 18px;
+    color: #fff;
+  }
+}
